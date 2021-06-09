@@ -18,11 +18,11 @@ RUN apt-get update && apt-get install -y --allow-downgrades --allow-change-held-
 
 RUN pip install scikit-image tqdm wget
 RUN pip install Pillow==6.1
-#RUN pip install cython pyyaml lmdb scipy tensorboard
-RUN pip install cython lmdb scipy tensorboard
+RUN pip install cython pyyaml lmdb scipy tensorboard
+#RUN pip install cython lmdb scipy tensorboard
 RUN pip install jupyterlab --upgrade
 RUN pip install opencv-python opencv-contrib-python
-RUN pip install open3d
+RUN pip install open3d-python
 RUN pip install albumentations requests
 RUN pip install imageio-ffmpeg
 RUN pip install av
