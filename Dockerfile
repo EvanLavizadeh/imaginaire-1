@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:20.08-py3
+FROM nvcr.io/nvidia/pytorch:20.03-py3
 # Install basics
 RUN apt-get update && apt-get install -y --allow-downgrades --allow-change-held-packages --no-install-recommends \
         build-essential \
