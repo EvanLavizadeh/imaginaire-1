@@ -1,4 +1,8 @@
 FROM nvcr.io/nvidia/pytorch:20.12-py3
+
+ENV DEBIAN_FRONTEND=noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
+
 # Install basics
 RUN apt-get update && apt-get install -y --allow-downgrades --allow-change-held-packages --no-install-recommends \
         build-essential \
